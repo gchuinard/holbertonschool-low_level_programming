@@ -18,7 +18,7 @@ int	main(void)
 		{
 			putchar(deci + '0');
 			putchar(unit + '0');
-			if (unit < 9 || deci < 9)
+			if (unit != 9 || deci != 8)
 			{
 				putchar(',');
 				putchar(' ');
