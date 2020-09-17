@@ -23,7 +23,7 @@ int	main(void)
 				putchar(cent + '0');
 				putchar(deci + '0');
 				putchar(unit + '0');
-				if (unit < 9 || deci < 9)
+				if (unit != 9 || deci != 8 || cent != 7)
 				{
 					putchar(',');
 					putchar(' ');
