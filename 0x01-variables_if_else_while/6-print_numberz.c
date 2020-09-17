@@ -10,9 +10,9 @@ int	main(void)
 	int	alpha;
 
 	alpha = 0;
-	while (alpha <= 9)
+	while (alpha++ < 9)
 	{
-		putchar(alpha++);
+		putchar(alpha + '0');
 	}
 	putchar('\n');
 	return (0);
