@@ -61,4 +61,8 @@ void	print_times_table(int nbr_end)
 			nbr++;
 		}
 	}
+	else
+	{
+		_putchar('\n');
+	}
 }
