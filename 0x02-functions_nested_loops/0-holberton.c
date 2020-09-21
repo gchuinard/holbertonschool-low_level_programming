@@ -8,6 +8,15 @@
  */
 int	main(void)
 {
-	_putstr("Holberton\n");
+	char	str[] = "Holberton";
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
