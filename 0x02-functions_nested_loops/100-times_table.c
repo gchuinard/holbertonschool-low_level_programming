@@ -14,7 +14,7 @@ void	print_times_table(int nbr_end)
 	int	fact;
 	int	result;
 
-	if (nbr_end > 0 && nbr_end < 16)
+	if (nbr_end >= 0 && nbr_end < 16)
 	{
 		nbr = 0;
 		while (nbr <= nbr_end)
