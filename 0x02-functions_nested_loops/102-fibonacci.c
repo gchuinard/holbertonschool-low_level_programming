@@ -8,22 +8,22 @@
  */
 int	main(void)
 {
-	long long	result;
-	int	count;
-	long long	nbr;
-	long long	tmp;
+	unsigned long	result;
+	int		count;
+	unsigned long	nbr;
+	unsigned long	tmp;
 
 	result = 1;
 	count = 1;
 	nbr = 1;
 	while (count < 50)
 	{
-		printf("%lli, ", result);
+		printf("%lu, ", result);
 		tmp = result;
 		result += nbr;
 		nbr = tmp;
 		count++;
 	}
-	printf("%lli\n", result);
+	printf("%lu\n", result);
 	return (0);
 }
