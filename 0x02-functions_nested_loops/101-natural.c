@@ -15,7 +15,7 @@ int	main(void)
 	int	count;
 
 	nbr = 1024;
-	count = 0;
+	count = 1;
 	while (count < 1024)
 	{
 		if (count % 3 == 0 || count % 5 == 0)
