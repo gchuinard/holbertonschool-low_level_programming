@@ -8,23 +8,31 @@
  */
 int	main(void)
 {
-	double	nbr;
-	double	tmp;
-	double	total;
+	long double	nbr;
+	long double	tmp;
+	long double	total;
 	int	count;
 
 	nbr = 1;
 	total = 2;
 	count = 0;
-	printf("%.0lf\n", nbr++);
-	printf("%.0lf\n", nbr++);
-	while (count < 98)
+	printf("1, ");
+	printf("2, ");
+	while (count < 96)
 	{
 		tmp = total;
 		total += nbr;
 		nbr = tmp;
-		printf("%.0lf\n", total);
+		printf("%.0Lf", total);
 		count++;
+		if (count < 96)
+		{
+			printf(", ");
+		}
+		else
+		{
+			printf("\n");
+		}
 	}
 	return (0);
 }
