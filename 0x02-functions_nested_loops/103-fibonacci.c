@@ -16,18 +16,11 @@ int	main(void)
 	nbr = 1;
 	while (result < 4000000)
 	{
-		printf("%lu", result);
+		if (result % 2 == 0)
+			printf("%lu\n", result);
 		tmp = result;
 		result += nbr;
 		nbr = tmp;
-		if (result < 4000000)
-		{
-			printf(", ");
-		}
-		else
-		{
-			printf("\n");
-		}
 	}
 	return (0);
 }
