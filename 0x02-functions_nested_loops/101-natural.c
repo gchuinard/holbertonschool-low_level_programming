@@ -8,13 +8,9 @@
  */
 int	main(void)
 {
-	int	nbr;
-	int	cinq;
-	int	trois;
 	int	result;
 	int	count;
 
-	nbr = 1024;
 	count = 1;
 	while (count < 1024)
 	{
