@@ -16,7 +16,7 @@ int	main(void)
 	result = 1;
 	count = 1;
 	nbr = 1;
-	while (count <= 50)
+	while (count < 49)
 	{
 		printf("%lli, ", result);
 		tmp = result;
