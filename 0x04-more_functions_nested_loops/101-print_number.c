@@ -23,7 +23,8 @@ void	print_number(int n)
 	}
 	if (nbr > 10)
 	{
-		print_number(nbr / 10);
+		n = nbr / 10;
+		print_number(n);
 	}
 	_putchar((nbr % 10) + '0');
 }
