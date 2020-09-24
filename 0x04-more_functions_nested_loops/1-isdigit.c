@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
- * _isupper - Cheeck if c if upper case
+ * _isdigit - Check if c is a number
  *
  * @c: the value of the character to check
  *
  * Return:1 (Success) or 0 (Fail) or -1 (Error)
  *
  */
-int	_isupper(int c)
+int	_isdigit(int c)
 {
 	if (c)
 	{
-		if (c >= 65 && c <= 90)
+		if (c >= 48 && c <= 57)
 		{
 			return (1);
 		}
