@@ -6,14 +6,10 @@
  * @a: the value of the first number
  * @b: the value of the second number
  *
- * Return: The result of the multiplication (Success) or -1 (Error)
+ * Return: The result of the multiplication (Success)
  *
  */
 int	mul(int a, int b)
 {
-	if (a && b)
-	{
-		return (a * b);
-	}
-	return (-1);
+	return (a * b);
 }

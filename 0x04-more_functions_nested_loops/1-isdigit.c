@@ -5,18 +5,10 @@
  *
  * @c: the value of the character to check
  *
- * Return:1 (Success) or 0 (Fail) or -1 (Error)
+ * Return:1 (Success) or 0 (Fail)
  *
  */
 int	_isdigit(int c)
 {
-	if (c)
-	{
-		if (c >= 48 && c <= 57)
-		{
-			return (1);
-		}
-		return (0);
-	}
-	return (-1);
+	return (c >= 48 && c <= 57);
 }
