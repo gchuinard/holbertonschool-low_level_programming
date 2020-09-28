@@ -1,6 +1,26 @@
 #include "holberton.h"
 
 /**
+ * ft_strlen - calculate the length of a string.
+ *
+ * @str: the string we want the length.
+ *
+ * Return: the length of the string
+ *
+ */
+int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (*(str++))
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * print_rev - prints a string, in reverse, followed by a new line.
  *
  * @s: the string to dispay.
@@ -13,7 +33,7 @@ void	print_rev(char *s)
 {
 	int	len;
 
-	len = _strlen(s);
+	len = ft_strlen(s);
 	while (*(s))
 	{
 		s++;
