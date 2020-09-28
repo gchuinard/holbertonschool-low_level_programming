@@ -15,10 +15,10 @@ void	print_array(int *a, int n)
 {
 	int	i;
 
-	while (a[i] && i < n)
+	while (i < n)
 	{
 		printf("%i", a[i++]);
-		if (a[i] && i < n)
+		if (i < n)
 		{
 			printf(", ");
 		}
