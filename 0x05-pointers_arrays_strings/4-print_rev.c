@@ -38,9 +38,9 @@ void	print_rev(char *s)
 	{
 		s++;
 	}
-	while (len-- >= 0)
+	while (len-- > 0)
 	{
-		write(1, s--, 1);
+		write(1, --s, 1);
 	}
 	write(1, "\n", 1);
 }
