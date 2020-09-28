@@ -1,6 +1,26 @@
 #include "holberton.h"
 
 /**
+ * ft_strlen - calculate the length of a string.
+ *
+ * @str: the string we want the length.
+ *
+ * Return: the length of the string
+ *
+ */
+int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (*(str++))
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * rev_string - reverses a string.
  *
  * @s: the string to reverse.
@@ -16,7 +36,7 @@ void	rev_string(char *s)
 	char	tmp;
 
 	i = 0;
-	j = _strlen(s) - 1;
+	j = ft_strlen(s) - 1;
 	while (j > 2)
 	{
 		tmp = s[i];
