@@ -15,11 +15,10 @@ int     _atoi(char *s)
 	int             nbr;
 	int             sign;
 
-	ret = 0;
+	nbr = 0;
 	sign = 0;
 	while ((*s < '0' || *s > '9') && *s != '\0')
 	{
-		s++;
 		if (*s == '-')
 		{
 			sign--;
@@ -28,6 +27,7 @@ int     _atoi(char *s)
 		{
 			sign++;
 		}
+		s++;
 	}
 	while ((*(s) >= '0' && (*(s) <= '9')))
 	{
