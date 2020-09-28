@@ -1,6 +1,26 @@
 #include "holberton.h"
 
 /**
+ * ft_strlen - calculate the length of a string.
+ *
+ * @str: the string we want the length.
+ *
+ * Return: the length of the string
+ *
+ */
+int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (*(str++))
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * puts_half -  prints half of a string, followed by a new line.
  *
  * @str: the string to dispay.
