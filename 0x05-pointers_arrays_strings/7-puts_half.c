@@ -33,7 +33,7 @@ void	puts_half(char *str)
 {
 	int	len;
 
-	len = _strlen(str) / 2;
+	len = ft_strlen(str) / 2;
 	while (str[len])
 	{
 		write(1, &str[len++], 1);
