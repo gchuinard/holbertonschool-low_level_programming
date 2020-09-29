@@ -9,31 +9,27 @@
  *
  */
 
-
-int     _atoi(char *s)
+int _atoi(char *s)
 {
-	int             nbr;
-	int             sign;
+	int 	i;
+	int	nbr;
+	int 	sign;
 
+	i = 0;
+	sign = 1;
 	nbr = 0;
-	sign = 0;
-	while ((*s < '0' || *s > '9') && *s != '\0')
+	while ((s[i] < '0' || s[i] > '9') && s[i] != '\0')
 	{
-		if (*s == '-')
+		if (s[i] == '-')
 		{
-			sign--;
+			sign *= -1;
 		}
-		else if (*s == '+')
-		{
-			sign++;
-		}
-		s++;
+		i++;
 	}
-	while ((*(s) >= '0' && (*(s) <= '9')))
+	while (s[i] >= '0' && s[i] <= '9')
 	{
-		nbr = nbr * 10 + *s - 48;
-		s++;
+		nbr = nbr * 10 + * (s[i] - '0');
+		nbr++;
 	}
-	sign = sign < 0 ? -1 : 1;
 	return (nbr * sign);
 }
