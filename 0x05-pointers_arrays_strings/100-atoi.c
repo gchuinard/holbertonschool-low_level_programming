@@ -28,8 +28,8 @@ int _atoi(char *s)
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
-		nbr = nbr * 10 + (s[i] - '0');
-		nbr++;
+		nbr = nbr * 10 + sign * (s[i] - '0');
+		i++;
 	}
-	return (nbr * sign);
+	return (nbr);
 }
