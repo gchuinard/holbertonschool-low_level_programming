@@ -14,7 +14,7 @@ char	*rot13(char *str)
 	char	alpha[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char	roted[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int	i;
-       	int	j;
+	int	j;
 
 	i = 0;
 	while (str[i])
