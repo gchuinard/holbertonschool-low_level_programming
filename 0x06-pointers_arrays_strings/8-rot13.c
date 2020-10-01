@@ -11,20 +11,22 @@
 
 char	*rot13(char *str)
 {
+	char	alpha[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char	roted[53] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int	i;
+       	int	j;
 
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] >= 'A' && str[i] <= 'M') ||
-				(str[i] >= 'a' && str[i] <= 'm'))
+		j = 0;
+		while (str[i] != alpha[j])
 		{
-			str[i] += 13;
+			j++;
 		}
-		else if ((str[i] >= 'N' && str[i] <= 'Z') ||
-				(str[i] >= 'n' && str[i] <= 'z'))
+		if (j < 52)
 		{
-			str[i] -= 13;
+			str[i] = roted[j];
 		}
 		i++;
 	}
