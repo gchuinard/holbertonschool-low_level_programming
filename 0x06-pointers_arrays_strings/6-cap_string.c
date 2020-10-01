@@ -11,24 +11,28 @@
 char	*cap_string(char *str)
 {
 	int	i;
+	char	sep[] = " \t\n;,.!?\"(){}\0";
+	int	j;
+	bool	is_sep;
 
-	i = 0;
+	is_sep = true;
 	while (str[i])
 	{
-		if (i > 0)
+		if (is_sep)
 		{
-			if ((str[i] >= 'a' && str[i] <= 'z') &&
-					(((str[i - 1] < '0') && str[i] != '-') ||
-					 (str[i - 1] > '9' && str[i - 1] < 'A') ||
-					 (str[i - 1] > 'Z' && str[i - 1] < 'a') ||
-					 (str[i - 1] > 'z')))
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] -= 32;
 			}
+			is_sep = false;
 		}
-		else if (str[i] >= 'a' && str[i] <= 'z')
+		while (sep[j])
 		{
-			str[i] -= 32;
+			if (str[i] == separators[i])
+			{
+				is_sep = true;
+			}
+			j++;
 		}
 		i++;
 	}
