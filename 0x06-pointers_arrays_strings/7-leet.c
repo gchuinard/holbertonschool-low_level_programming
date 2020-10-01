@@ -15,6 +15,7 @@ char	*leet(char *str)
 	int	j;
 	char	letter[5] = {'a', 'e', 'o', 't', 'l'};
 	char	nbr[5] = {'4', '3', '0', '7', '1'};
+
 	i = 0;
 	while (str[i])
 	{
