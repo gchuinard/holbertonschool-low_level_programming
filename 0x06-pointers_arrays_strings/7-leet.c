@@ -21,7 +21,7 @@ char	*leet(char *str)
 		j = 0;
 		while (j < 5)
 		{
-			if (letter[j] == str[i] || (letter[j] -32) == str[i])
+			if (letter[j] == str[i] || (letter[j] - 32) == str[i])
 			{
 				str[i] = nbr[j];
 			}
