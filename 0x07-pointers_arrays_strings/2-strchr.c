@@ -16,7 +16,7 @@ char	*_strchr(char *s, char c)
 	char		*result;
 
 	i = 0;
-	result = NULL;
+	*result = NULL;
 	while (s[i])
 	{
 		if (s[i] == c)
