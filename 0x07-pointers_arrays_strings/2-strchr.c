@@ -16,7 +16,7 @@ char	*_strchr(char *s, char c)
 	char		*result;
 
 	i = 0;
-	*result = NULL;
+	result = NULL;
 	while (s[i])
 	{
 		if (s[i] == c)
@@ -26,5 +26,23 @@ char	*_strchr(char *s, char c)
 		}
 		i++;
 	}
+	if (s[i] == c)
+	{
+		result = &s[i];
+	}
 	return (result);
+}
+
+int main(void)
+{
+	char *s = "hello";
+	char *f;
+
+	f = _strchr(s, 'l');
+
+	if (f != NULL)
+	{
+		printf("%s\n", f);
+	}
+	return (0);
 }
