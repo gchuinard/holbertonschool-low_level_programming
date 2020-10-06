@@ -12,24 +12,23 @@
 
 void	print_diagsums(int *a, int size)
 {
-	unsigned int	col;
-	int		result_a;
-	int		result_b;
-	unsigned int	square;
-	int		nbr;
+	int		i;
+	unsigned int	result;
 
-	col = 0;
-	result_a = 0;
-	result_b = 0;
-	square = size * size - size;
-	nbr = 0;
-	while (col < size)
+	i = 0;
+	result = 0;
+	while (i < size)
 	{
-		result_a += a[nbr];
-		result_b += a[square];
-		nbr += size + 1;
-		square -= size - 1;
-		col++;
+		result += *(a + 1 * (size + 1));
+		i++;
 	}
-	printf("%i, %i\n", result_a, result_b);
+	printf("%i, ", result);
+	i = 0;
+	result = 0;
+	while (i < size)
+	{
+		sum += *(a + (i + 1) * (size - 1));
+		i++;
+	}
+	printf("%i\n", result);
 }
