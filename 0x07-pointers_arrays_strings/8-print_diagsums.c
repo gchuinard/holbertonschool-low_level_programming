@@ -25,7 +25,6 @@ void	print_diagsums(int *a, int size)
 	nbr = 0;
 	while (col < size)
 	{
-		printf("a = %i\n", a[square]);
 		result_a += a[nbr];
 		result_b += a[square];
 		nbr += size + 1;
