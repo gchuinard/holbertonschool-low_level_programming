@@ -18,6 +18,10 @@ char	*_strstr(char *haystack, char *needle)
 	unsigned int	tmp;
 
 	i = 0;
+	if (!needle[0])
+	{
+		return (&haystack[i]);
+	}
 	while (haystack[i])
 	{
 		j = 0;
