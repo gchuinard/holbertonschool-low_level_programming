@@ -29,7 +29,7 @@ int	_strlen_recursion(char *s)
 
 int	_check_palindrome(char *s, int len, int i)
 {
-	if (s[i] == s[len] && (i == (len - 1) || i == len))
+	if (s[i] == s[len])
 	{
 		return (1);
 	}
@@ -37,7 +37,7 @@ int	_check_palindrome(char *s, int len, int i)
 	{
 		return (0);
 	}
-	return (_check_palindrome(s, len - 1, i + 1));
+	return (_check_palindrome(s, len--, i++));
 }
 
 /**
@@ -57,5 +57,20 @@ int	is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (_check_palindrome(s, len - 1, 0));
+	return (_check_palindrome(s, --len, 0));
+}
+
+int main(void)
+{
+	int r;
+
+	r = is_palindrome("level");
+	printf("%d\n", r);
+	r = is_palindrome("redder");
+	printf("%d\n", r);
+	r = is_palindrome("holberton");
+	printf("%d\n", r);
+	r = is_palindrome("step on no pets");
+	printf("%d\n", r);
+	return (0);
 }
