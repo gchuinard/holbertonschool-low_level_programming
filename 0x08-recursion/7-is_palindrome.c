@@ -37,7 +37,7 @@ int	_check_palindrome(char *s, int len, int i)
 	{
 		return (0);
 	}
-	return (_check_palindrome(s, --len, ++i));
+	return (_check_palindrome(s, len - 1, i + 1));
 }
 
 /**
@@ -57,5 +57,5 @@ int	is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (_check_palindrome(s, --len, 0));
+	return (_check_palindrome(s, len - 1, 0));
 }
