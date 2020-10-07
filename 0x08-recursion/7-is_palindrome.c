@@ -29,15 +29,18 @@ int	_strlen_recursion(char *s)
 
 int	_check_palindrome(char *s, int len, int i)
 {
-	if (s[i] == s[len])
+	if (s[i] == s[len] && (i == len - 1 || i == len))
 	{
 		return (1);
 	}
-	else
+	else if (s[i] != s[len])
 	{
 		return (0);
 	}
-	return (_check_palindrome(s, len--, i++));
+	else
+	{
+		return (_check_palindrome(s, --len, ++i));
+	}
 }
 
 /**
