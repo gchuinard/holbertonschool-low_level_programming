@@ -14,7 +14,7 @@ int	main(int argc, char **argv)
 	int	i;
 
 	i = 0;
-	argc = argc
+	(void)argc;
 	while (argv[0][i])
 	{
 		write(1, &argv[0][i], 1);
