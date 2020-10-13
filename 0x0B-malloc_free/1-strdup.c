@@ -58,5 +58,12 @@ char	*_strdup(char *str)
 			}
 		}
 	}
-	return (dest);
+	if (dest != NULL)
+	{
+		return (dest);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
