@@ -22,7 +22,7 @@ char	*create_array(unsigned int size, char c)
 	str = (char *)malloc(sizeof(char) * size);
 	if (str != NULL)
 	{
-		while (i <= size)
+		while (i < size)
 		{
 			str[i] = c;
 			i++;
