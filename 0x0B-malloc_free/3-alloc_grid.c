@@ -1,6 +1,24 @@
 #include "holberton.h"
 
 /**
+ * free_tab - free a table.
+ *
+ * @tab: the table.
+ * @i: number of elements to free.
+ *
+ * Return: void.
+ */
+void	free_tab(char *tab, int i)
+{
+	while (i > 0)
+	{
+		free(tab[i]);
+		i--;
+	}
+	free(tab);
+}
+
+/**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers.
  *
  * @width: the width of the table.
@@ -30,6 +48,7 @@ int	**alloc_grid(int width, int height)
 		tab[i] = (int *) malloc(sizeof(int) * width);
 		if (tab[i] == NULL)
 		{
+			free_tab(tab, i);
 			return (NULL);
 		}
 		i++;
