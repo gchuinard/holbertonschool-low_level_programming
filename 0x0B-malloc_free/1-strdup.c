@@ -52,18 +52,8 @@ char	*_strdup(char *str)
 		{
 			dest[i] = str[i];
 			i++;
-			if (i == len)
-			{
-				dest[i] = '\0';
-			}
 		}
+		dest[i] = '\0';
 	}
-	if (dest != NULL)
-	{
-		return (dest);
-	}
-	else
-	{
-		return (NULL);
-	}
+	return (dest);
 }
