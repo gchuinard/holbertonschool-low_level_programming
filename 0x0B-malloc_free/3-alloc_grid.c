@@ -51,16 +51,14 @@ int	**alloc_grid(int width, int height)
 			free_tab(tab, i);
 			return (NULL);
 		}
-		i++;
-	}
-	i = 0;
-	while (i < height)
-	{
-		j = 0;
-		while (j < width)
+		else
 		{
-			tab[i][j] = 0;
-			j++;
+			j = 0;
+			while (j < width)
+			{
+				tab[i][j] = 0;
+				j++;
+			}
 		}
 		i++;
 	}
