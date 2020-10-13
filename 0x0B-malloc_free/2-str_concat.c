@@ -1,25 +1,24 @@
 #include "holberton.h"
 
 /**
- * _strlen_cat - return the size of a string or 1 if string == NULL.
+ * _strlen - return the size of a string.
  *
- * @str: the string
+ * @str: the string.
  *
- * Return: the size of a string or 1.
+ * Return: the size of the string or 0.
  */
 
-size_t	_strlen_cat(char *str)
+size_t	_strlen(char *str)
 {
 	size_t	len;
 
-	if (str == NULL)
-	{
-		return (1);
-	}
 	len = 0;
-	while (str[len])
+	if (str != NULL)
 	{
-		len++;
+		while (*(str++))
+		{
+			len++;
+		}
 	}
 	return (len);
 }
@@ -40,7 +39,7 @@ char	*str_concat(char *s1, char *s2)
 	unsigned int	i;
 	unsigned int	j;
 
-	len = _strlen_cat(s1) + _strlen_cat(s2) - 1;
+	len = _strlen(s1) + _strlen(s2) + 1;
 	dest = (char *)malloc(sizeof(char) * len);
 	if (dest != NULL)
 	{
