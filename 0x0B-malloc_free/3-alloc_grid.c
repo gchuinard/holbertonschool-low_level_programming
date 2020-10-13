@@ -8,7 +8,7 @@
  *
  * Return: void.
  */
-void	free_tab(char *tab, int i)
+void	free_tab(int **tab, int i)
 {
 	while (i > 0)
 	{
