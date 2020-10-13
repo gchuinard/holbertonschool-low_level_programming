@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * alloc_grid - frees a 2 dimensional grid.
+ * free_grid - frees a 2 dimensional grid.
  *
  * @grid: the grid.
  * @height: the height of the grid.
