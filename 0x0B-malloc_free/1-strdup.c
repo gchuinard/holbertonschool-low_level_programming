@@ -45,7 +45,7 @@ char	*_strdup(char *str)
 	}
 	len = _strlen(str) + 1;
 	dest = (char *)malloc(sizeof(char) * len);
-	if (dest != NULL && *str)
+	if (dest != NULL)
 	{
 		i = 0;
 		while (i < len)
@@ -53,7 +53,7 @@ char	*_strdup(char *str)
 			dest[i] = str[i];
 			i++;
 		}
+		dest[i] = '\0';
 	}
-	dest[i] = '\0';
 	return (dest);
 }
