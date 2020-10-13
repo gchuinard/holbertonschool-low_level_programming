@@ -40,9 +40,9 @@ char	*str_concat(char *s1, char *s2)
 	unsigned int	i;
 	unsigned int	j;
 
-	dest = NULL;
 	len = _strlen_cat(s1) + _strlen_cat(s2) - 1;
-	if ((dest = (char *)malloc(sizeof(char) * len)))
+	dest = (char *)malloc(sizeof(char) * len);
+	if (dest != NULL)
 	{
 		i = 0;
 		if (s1 != NULL)
