@@ -20,31 +20,30 @@ int	**alloc_grid(int width, int height)
 		return (NULL);
 	}
 	tab = (int **)malloc(sizeof(int *) * height);
-	if (tab != NULL)
+	if (tab == NULL)
 	{
-		i = 0;
-		while (i < width)
+		return (NULL);
+	}
+	i = 0;
+	while (i < width)
+	{
+		tab[i] = (int *) malloc(sizeof(int) * width);
+		if (tab[i] == NULL)
 		{
-			tab[i] = (int *) malloc(sizeof(int) * width);
-			if (tab[i] == NULL)
-			{
-				return (NULL);
-			}
-			i++;
+			return (NULL);
 		}
-		tab[i] = '\0';
-		i = 0;
-		while (j < height)
+		i++;
+	}
+	i = 0;
+	while (j < height)
+	{
+		j = 0;
+		while (tab[i][j] < width)
 		{
-			j = 0;
-			while (tab[i][j] < width)
-			{
-				tab[i][j] = 0;
-				j++;
-			}
-			tab[i][j] = '\0';
-			i++;
+			tab[i][j] = 0;
+			j++;
 		}
+		i++;
 	}
 	return (tab);
 }
