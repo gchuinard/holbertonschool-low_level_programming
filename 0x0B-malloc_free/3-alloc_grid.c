@@ -10,7 +10,7 @@
  */
 void	free_tab(int **tab, int i)
 {
-	while (i > 0)
+	while (i >= 0)
 	{
 		free(tab[i]);
 		i--;
