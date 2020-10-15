@@ -23,7 +23,7 @@ int	*array_range(int min, int max)
 	{
 		size = max - min;
 	}
-	tab = (int *)malloc(sizeof(int) * size + 1);
+	tab = (int *)malloc(sizeof(int) * (size + 1));
 	if (tab == NULL)
 	{
 		return (NULL);
