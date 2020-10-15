@@ -175,7 +175,7 @@ int	_isdigit_tab(char **tab)
 
 void	init_str(char *str, int l)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < l)
