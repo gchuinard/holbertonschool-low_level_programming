@@ -205,7 +205,7 @@ int	main(int argc, char **argv)
 	char	*result;
 	char	*sub_result;
 
-	if (argc != 3 || _isdigit_tab(argv))
+	if (argc != 3 || !(_isdigit_tab(argv)))
 	{
 		_putstr("Error\n");
 		exit(98);
