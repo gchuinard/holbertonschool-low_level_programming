@@ -24,19 +24,6 @@ size_t	_strlen(char *str)
 }
 
 /**
- * _putchar - print a character.
- *
- * @c: the character to display.
- *
- * Return: void
- */
-
-int	_putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-/**
  * _putstr - print a string.
  *
  * @str: the string to display.
