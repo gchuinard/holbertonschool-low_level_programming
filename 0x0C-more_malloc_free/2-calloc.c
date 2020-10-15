@@ -18,7 +18,7 @@ void	*_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	ptr = (void *)malloc((sizeof(size) * nmemb) + 1);
+	ptr = (void *)malloc(size * nmemb);
 	if (ptr == NULL)
 	{
 		return (NULL);
