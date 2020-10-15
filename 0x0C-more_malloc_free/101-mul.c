@@ -190,7 +190,7 @@ void	init_str(char *str, int l)
  * @argc: number of arguments.
  * @argv: argument vector.
  *
- * Return: zero, or exit status of 98 if failure.
+ * Return: 0 or exit status of 98 if failure.
  */
 
 int main(int argc, char *argv[])
