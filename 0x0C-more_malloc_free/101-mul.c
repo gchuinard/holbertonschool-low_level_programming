@@ -147,8 +147,10 @@ int	_isdigit_tab(char **tab)
 	unsigned int	i;
 	unsigned int	j;
 
+	i = 1;
 	while (tab[i])
 	{
+		j = 0;
 		while (tab[i][j])
 		{
 			if (tab[i][j] <= '0' || tab[i][j] >= '9')
