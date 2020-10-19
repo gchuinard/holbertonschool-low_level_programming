@@ -6,6 +6,7 @@
  * @d: the structure.
  * @name: the name of the dog.
  * @age: age of the dog.
+ * @owner: the owner of the dog.
  *
  * Return: void
  */
