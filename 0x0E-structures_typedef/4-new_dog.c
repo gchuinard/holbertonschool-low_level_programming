@@ -75,7 +75,8 @@ dog_t	*new_dog(char *name, float age, char *owner)
 	char	*dog_name;
 	char	*dog_owner;
 
-	if (name == NULL || owner == NULL || age < 0)
+	if (name == NULL || owner == NULL || age < 0
+			|| _strlen(name) < 1 || _strlen(owner) < 1)
 	{
 		return (NULL);
 	}
