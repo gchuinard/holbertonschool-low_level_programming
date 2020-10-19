@@ -1,1 +1,12 @@
-/** main - prints MSG Return:0*/main() {puts("Hello, Holberton"); }
+#include <stdio.h>
+
+/**
+ *  main - prints Hello, Holberton
+ *  Return:0
+ */
+
+int	main()
+{
+	printf("Hello, Holberton\n");
+	return (0);
+}
