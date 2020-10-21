@@ -1,6 +1,7 @@
 #include "function_pointers.h"
 
-/** main - Entry point.
+/**
+ * main - Entry point.
  *
  * @argc: the size of argv.
  * @argv: table with arguments
