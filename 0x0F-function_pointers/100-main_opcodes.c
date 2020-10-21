@@ -29,7 +29,7 @@ int	main(int argc, char **argv)
 	}
 	ft = (unsigned char *)main;
 	i = 0;
-	while (i < (nbr - 1) && ft[i] != 195)
+	while (i < (nbr - 1))
 	{
 		printf("%02x ", ft[i]);
 		i++;
