@@ -1,10 +1,9 @@
 #include "function_pointers.h"
 
 /**
- * print_name - print a name, depend on the function in the param.
- *
- * @name: the name to print.
- * @f: the pointer on function to use ot print.
+ * print_name - prints a name
+ * @name: the pointer to name
+ * @f: points to function
  *
  * Return: void
  */
