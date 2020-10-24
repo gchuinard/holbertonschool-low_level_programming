@@ -38,12 +38,9 @@ void	print_all(const char * const format, ...)
 				str = va_arg(params, char *);
 				if (str == NULL || str[0] == '\0')
 				{
-					printf("%p%s", str, space);
+					str = "(nil)";
 				}
-				else
-				{
-					printf("%s%s", str, space);
-				}
+				printf("%s%s", str, space);
 				break;
 		}
 		i++;
