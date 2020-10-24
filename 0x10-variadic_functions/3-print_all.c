@@ -36,7 +36,7 @@ void	print_all(const char * const format, ...)
 				break;
 			case's':
 				str = va_arg(params, char *);
-				if (!str || !*str)
+				if (str == NULL || str[0] == '\0')
 				{
 					printf("%p%s", str, space);
 				}
