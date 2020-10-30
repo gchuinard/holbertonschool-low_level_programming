@@ -5,12 +5,8 @@ section .data
 section .text
 	global main
 main:
-	mov ebx, 1
-	mov eax, 4
-	mov ecx, string
-	mov edx, string_len
-	int 0x80
+	mov edi, string
+	mov eax, 0
+	call printf
 
-	mov ebx, 0
-	mov eax, 1
-	int 0x80
+extern	printf
