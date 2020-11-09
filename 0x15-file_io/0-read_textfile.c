@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output.
+ * read_textfile - reads a text file and prints it to the POSIX
+ * standard output.
  *
  * @filename : name of the file to read.
  * @letters : number of letters it should read and print.
@@ -17,7 +18,9 @@ ssize_t	read_textfile(const char *filename, size_t letters)
 	char	*buf;
 
 	if (filename == NULL || fd == -1)
+	{
 		return (0);
+	}
 	fd = open(filename, O_RDONLY);
 	buf = (char *)malloc(sizeof(char) * (letters + 1));
 	if (buf == NULL)
