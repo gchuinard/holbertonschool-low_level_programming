@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - returns the nth node of a dlistint_t linked list.
+ * get_dnodeint_at_index - returns the nth node of a dlistint_t linked list.
  * @head: the list wherefing the node.
  * @index: the index of the node to find.
  *
